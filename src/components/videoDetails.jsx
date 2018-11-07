@@ -1,13 +1,11 @@
 import React, { Component } from "react";
 import VideoListItem from "./videoListItem";
-const VideoDetails = () => {
-  const movies = ["movie1", "movie2", "movie3", "movie4", "movie5"];
+const VideoDetails = ({ title, description }) => {
   return (
-    <ul>
-      {movies.map(movie => (
-        <VideoListItem key={movie} movie={movie} />
-      ))}
-    </ul>
+    <div>
+      <h1>{title}</h1>
+      <p>{description}</p>
+    </div>
   );
 };
 
